@@ -6,7 +6,7 @@
 参考：https://junyou.tw/vscode-c/
 不要着急跳转，不然你可能会给坑了，看完下面的文字
 
-他的LLVM安装的是64位的，我跟着他的教程装了64位，运行opengl方程会提示：skipping incompatible LLVM\lib\freeglut.lib，报错，无法编译，后来想到Freeglut好像是32位的，于是把MinGW和LLVM和vscode配置都改成了32位的，于是就编译出来了~~~~~
+他的LLVM安装的是64位的，我跟着他的教程装了64位，运行opengl方程会提示：skipping incompatible LLVM\lib\freeglut.lib，报错，无法编译，后来想到Freeglut好像是32位的，于是把MinGW和LLVM和vscode配置都改成了x86的，于是就编译出成功了~~~~~
 
 所以下面给出相关工具32位的下载：
 
