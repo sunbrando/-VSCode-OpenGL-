@@ -13,22 +13,28 @@ MinGW
 Freeglut
 
 然后把安装后的MinGW和Freeglut里所有的文件，复制到LLVM文件夹里，
-然后再给vscode添加C++的扩展工具，和编译的配置文件（上传到本GitHub上了）。
+然后再给vscode添加C++的扩展工具，和编译的配置文件。
 
 但是！！！！
 他的教程里MinGW和LLVM都是64位的，我跟着他的教程装了64位，运行会提示：skipping incompatible LLVM\lib\freeglut.lib，报错，无法编译，后来想到Freeglut好像是32位的，于是把MinGW和LLVM和vscode配置都改成了32位的，于是就编译出来了~~~~~
 
-下面给出32位的下载
+所以下面给出32位的下载。
 
 LLVM：http://releases.llvm.org/download.html
+![Image text](https://github.com/sunbrando/-VSCode-OpenGL-/blob/master/Image/QQ%E6%88%AA%E5%9B%BE20190908230246.png)
 
-MinGW：https://osdn.net/projects/mingw/releases/
+MinGW：https://osdn.net/projects/mingw/releases/ ，直接下mingw-get-setup.exe即可，这个默认是32位
 
 Freeglut：不要下载源文件的，要下载编译好的。参考：https://sudo.tw/article/setup-opengl-for-development-on-cpp
 
-c_cpp_properties.json此处要改成自己的LLVM目录。
+vscode的编译配置也要改成x86的，已上传到本仓库上。
+
+另外，c_cpp_properties.json此处要改成自己的LLVM目录。
+![Image text](https://github.com/sunbrando/-VSCode-OpenGL-/blob/master/Image/QQ%E6%88%AA%E5%9B%BE20190908230921.png)
 
 装好了，就试试本项目的helloworld.cpp，右键Run Code，
 
-看看有没有显示这个水壶
+看看有没有显示这个水壶，祝好运。
+![Image text](https://github.com/sunbrando/-VSCode-OpenGL-/blob/master/Image/QQ%E6%88%AA%E5%9B%BE20190908230641.png)
+
 
