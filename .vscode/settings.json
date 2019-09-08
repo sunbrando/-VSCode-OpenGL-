@@ -1,0 +1,28 @@
+{
+  "files.defaultLanguage": "cpp", 
+  "editor.formatOnType": true, 
+  "editor.snippetSuggestions": "top",
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "c": "cd $dir && clang $fileName -o $fileNameWithoutExt.exe -Wall -g -Og -static-libgcc -fcolor-diagnostics --target=i686-w64-mingw -std=c11 && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && clang++ $fileName -o $fileNameWithoutExt.exe -Wall -g -Og -static-libgcc -fcolor-diagnostics --target=i686-w64-mingw -std=c++17 -lopengl32 -lglu32 -lfreeglut && $dir$fileNameWithoutExt"
+  }, 
+  "code-runner.saveFileBeforeRun": true, 
+  "code-runner.preserveFocus": true, 
+  "code-runner.clearPreviousOutput": false, 
+  "C_Cpp.clang_format_sortIncludes": true,
+  "C_Cpp.intelliSenseEngine": "Default", 
+  "C_Cpp.errorSquiggles": "Disabled", 
+  "C_Cpp.autocomplete": "Disabled",
+  "clang.cflags": [
+    "--target=i686-w64-mingw",
+    "-std=c11",
+    "-Wall"
+  ],
+  "clang.cxxflags": [ 
+    "--target=i686-w64-mingw",
+    "-std=c++17",
+    "-Wall"
+  ],
+  "clang.completion.enable": true 
+}
